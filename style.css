@@ -2,5 +2,151 @@
 /*     CONTENTS     */
 /********************/
 
+.visible-box { 
+        width: 700px;
+            height: 600px;
+              background-color: coral; /* elephant--trunkspace for bg color */
+                position: relative; 
+                    /* Children can be absolutely positioned relative to this box */
+            }
+
+            .letter { /* Could be better named */
+                    font-family: 'Arbutus', cursive;
+                        position: absolute;
+                            font-size: 900%;
+                                left: 5%;
+                            }
+
+                            .is-for { /* poor naming */
+                                    font-family: 'Norican',cursive;
+                                        font-size: 300%;
+                                            position: absolute;
+                                                top: 8%;
+                                                    left: 23%;
+                                                }
+
+                                                .name {
+                                                        top: 7%;
+                                                            left: 38%;
+                                                                font-size: 400%;
+                                                            }
+                                                            .elephant {
+                                                                    
+                                                                    width: 500px;
+                                                                        height: 400px;
+                                                                            border-radius: 100% 80% 40% 100%;
+                                                                                position: relative; /* I'm placing elements inside with absolute */
+                                                                                    top: 25%;
+                                                                                        left: 15%;
+                                                                                            z-index: 1;
+                                                                                        }
+
+                                                                                        .elephant_head {
+                                                                                                width: 520px;
+                                                                                                    height: 350px;
+                                                                                                        border-radius: 50% 40% 50% 60%;
+                                                                                                            background-color: grey;
+                                                                                                                position: absolute;
+                                                                                                                    top: 0%;
+                                                                                                                        left: -5%;
+                                                                                                                            z-index: 1; /* needs to above leg box-shadows */
+                                                                                                                        }
+
+                                                                                                                        .elephant_eye {
+                                                                                                                                width: 20px;
+                                                                                                                                    height: 20px;
+                                                                                                                                        border-radius: 50%;
+                                                                                                                                            background-color: white;
+                                                                                                                                                position: absolute;
+                                                                                                                                                    top: 150px;
+                                                                                                                                                        left: 50px;
+                                                                                                                                                            z-index: 1;
+                                                                                                                                                        }
+
+                                                                                                                                                        .elephant_pupil {
+                                                                                                                                                                width: 15px;
+                                                                                                                                                                    height: 15px;
+                                                                                                                                                                        border-radius: 50%;
+                                                                                                                                                                            background-color: black;
+                                                                                                                                                                        }
+
+                                                                                                                                                                        .elephant_leg {
+                                                                                                                                                                                width: 100px;
+                                                                                                                                                                                    height: 160px;
+                                                                                                                                                                                        border-radius: 20px;
+                                                                                                                                                                                            background-color: grey;
+                                                                                                                                                                                                position: absolute;
+                                                                                                                                                                                                    top: 60%;
+                                                                                                                                                                                                        z-index: 0;
+                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                    .elephant--foreleg {
+                                                                                                                                                                                                            left: 22%;
+                                                                                                                                                                                                                box-shadow: 20px -5px 0px #555;
+                                                                                                                                                                                                            }
+                                                                                                                                                                                                            .elephant--rearleg {
+                                                                                                                                                                                                                    left: 65%;
+                                                                                                                                                                                                                        box-shadow: -20px -5px 0px #555;
+                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                    .elephant_trunk {
+                                                                                                                                                                                                                            width: 90px;
+                                                                                                                                                                                                                                height: 270px;
+                                                                                                                                                                                                                                    border-radius: 50%;
+                                                                                                                                                                                                                                        background-color: grey;
+                                                                                                                                                                                                                                            position: absolute;
+                                                                                                                                                                                                                                                top: 90px;
+                                                                                                                                                                                                                                                    left: -2%;
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                .elephant_trunkspace {
+                                                                                                                                                                                                                                                        width: 100px;
+                                                                                                                                                                                                                                                            height: 170px;
+                                                                                                                                                                                                                                                                border-radius: 50% 50% 0% 100%;
+                                                                                                                                                                                                                                                                    background-color: coral;
+                                                                                                                                                                                                                                                                        position: absolute;
+                                                                                                                                                                                                                                                                            top: 230px;
+                                                                                                                                                                                                                                                                                left: 35px;
+                                                                                                                                                                                                                                                                                    z-index: 0;
+                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                .elephant_tail {
+                                                                                                                                                                                                                                                                                        width: 180px;
+                                                                                                                                                                                                                                                                                            height: 15px;
+                                                                                                                                                                                                                                                                                                border-radius: 100%;
+                                                                                                                                                                                                                                                                                                    background-color: grey;
+                                                                                                                                                                                                                                                                                                        position: absolute;
+                                                                                                                                                                                                                                                                                                            top: 58%;
+                                                                                                                                                                                                                                                                                                                left: 72.5%;
+                                                                                                                                                                                                                                                                                                                    z-index: 5;
+                                                                                                                                                                                                                                                                                                                        transform: rotate(90deg);
+                                                                                                                                                                                                                                                                                                                            box-shadow: 0px 0px 0px grey;
+                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                        .elephant_ear {
+                                                                                                                                                                                                                                                                                                                                width: 120px;
+                                                                                                                                                                                                                                                                                                                                    height: 160px;
+                                                                                                                                                                                                                                                                                                                                        border-radius:50% 30% 100% 0%;
+                                                                                                                                                                                                                                                                                                                                            position: absolute;
+                                                                                                                                                                                                                                                                                                                                                left: 140px;
+                                                                                                                                                                                                                                                                                                                                                    top: 50px;
+                                                                                                                                                                                                                                                                                                                                                }   
+                                                                                                                                                                                                                                                                                                                                                .elephant_toenails {
+                                                                                                                                                                                                                                                                                                                                                        width: 15px;
+                                                                                                                                                                                                                                                                                                                                                            height: 20px;
+                                                                                                                                                                                                                                                                                                                                                                border-radius: 50% 50% 0% 0%;
+                                                                                                                                                                                                                                                                                                                                                                    background-color: white;
+                                                                                                                                                                                                                                                                                                                                                                        position: absolute;
+                                                                                                                                                                                                                                                                                                                                                                            top: 87%;
+                                                                                                                                                                                                                                                                                                                                                                                left: 15%;
+                                                                                                                                                                                                                                                                                                                                                                                    z-index: 4;
+                                                                                                                                                                                                                                                                                                                                                                                        box-shadow: 
+                                                                                                                                                                                                                                                                                                                                                                                                16px 0px 0px white,
+                                                                                                                                                                                                                                                                                                                                                                                                        32px 0px 0px white;
+                                                                                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                                                                                    .gradient {
+                                                                                                                                                                                                                                                                                                                                                                                                            background: linear-gradient(to right, grey, #555555);
+                                                                                                                                                                                                                                                                                                                                                                                                        }
+
+
+
 
 
